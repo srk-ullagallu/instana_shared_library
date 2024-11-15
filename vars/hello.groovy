@@ -17,6 +17,16 @@ def call() {
                     echo 'stage-3'
                 }
             }
+            stage('stage-4') {
+                steps {
+                    echo 'stage-3'
+                }
+            }
+            stage('stage-5') {
+                steps {
+                    echo 'stage-3'
+                }
+            }
         }
         post {
             always {
