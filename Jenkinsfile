@@ -6,6 +6,11 @@ pipeline{
                  echo "Hello World!"
             }
         }
+        stage("print the envi"){
+            steps{
+                sh 'printenv'
+            }
+        }
     }
     post{
         always{
